@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const pool = new Pool({
   host: process.env.POSTGRES_HOST || 'localhost',
-  port: parseInt(process.env.POSTGRES_PORT || '5433'),
+  port: parseInt(process.env.POSTGRES_PORT || '5432'),
   user: process.env.POSTGRES_USER || 'testuser',
   password: process.env.POSTGRES_PASSWORD || 'testpassword',
   database: process.env.POSTGRES_DB || 'testdb',
