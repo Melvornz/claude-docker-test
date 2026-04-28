@@ -49,7 +49,7 @@ function createItem(todo) {
 
   const span = document.createElement('span');
   span.textContent = todo.title;
-  span.className = `flex-1 text-sm ${todo.completed ? 'line-through text-gray-400' : 'text-gray-700'}`;
+  span.className = `flex-1 text-sm min-w-0 break-words ${todo.completed ? 'line-through text-gray-400' : 'text-gray-700'}`;
 
   const del = document.createElement('button');
   del.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
