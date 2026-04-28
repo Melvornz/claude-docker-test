@@ -86,12 +86,34 @@ http://localhost:3000
 ## Frontend
 
 Jednoduchá SPA bez frameworku:
-- Formulář pro přidání úkolu s validací
+- Formulář pro přidání úkolu s validací (max 255 znaků)
 - Seznam úkolů s checkboxem (completed = přeškrtnutý text)
 - Smazání úkolu tlačítkem X
 - Empty state při prázdném seznamu
 - Loading state při načítání
 - Error handling pro všechny API volání
+
+### Jak app vypadá
+
+```
+┌─────────────────────────────────────┐
+│           Todo App                  │
+│    Jednoduchý správce úkolů         │
+│    ⎘ Melvornz/claude-docker-test    │
+│                                     │
+│  ┌──────────────────────┐  [Přidat] │
+│  │ Co potřebuješ udělat?│           │
+│  └──────────────────────┘           │
+│                                     │
+│  ┌─────────────────────────────────┐│
+│  │ ☑ ~~Nakoupit mleko~~          × ││  ← completed, přeškrtnutý
+│  │ ☐ Zavolat doktora             × ││  ← aktivní
+│  │ ☐ Přečíst knihu               × ││
+│  └─────────────────────────────────┘│
+└─────────────────────────────────────┘
+```
+
+Při prázdném seznamu se zobrazí ikona složky s textem "Žádné úkoly. Přidej první!"
 
 ## Příkazy
 

@@ -25,6 +25,32 @@ npm run dev
 
 Otevři prohlížeč na `http://localhost:3000`.
 
+## Screenshots
+
+```
+┌─────────────────────────────────────┐
+│           Todo App                  │
+│    Jednoduchý správce úkolů         │
+│    ⎘ Melvornz/claude-docker-test    │
+│                                     │
+│  ┌──────────────────────┐  [Přidat] │
+│  │ Co potřebuješ udělat?│           │
+│  └──────────────────────┘           │
+│                                     │
+│  ┌─────────────────────────────────┐│
+│  │ ☑ ~~Nakoupit mleko~~          × ││
+│  │ ☐ Zavolat doktora             × ││
+│  │ ☐ Přečíst knihu               × ││
+│  └─────────────────────────────────┘│
+└─────────────────────────────────────┘
+```
+
+Prázdný stav:
+```
+│        (ikona složky)               │
+│   Žádné úkoly. Přidej první!        │
+```
+
 ## Použití frontendu
 
 - Zadej název úkolu do pole a klikni **Přidat**
